@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoutineClock">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="118dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Routine Name"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editGreet"
+        android:layout_width="194dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Greeting"
+        android:textSize="8pt"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.179"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="124dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:text="When"
+        android:textSize="12pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editGreet" />
+
+
+    <TextView
+        android:id="@+id/edtWish"
+        android:layout_width="408dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="8dp"
+        android:text="Date and time.\n The time is 12:00 AM"
+        android:textSize="9pt"
+        android:drawableLeft="@drawable/ic_baseline_time_24"
+        android:drawablePadding="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/edtEvent"
+        android:layout_width="179dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="116dp"
+        android:text="\t\t\t\t\tAdd Event"
+        android:textSize="13pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtWish" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="44dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/edtEvent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtEvent"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="289dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:text="Run these actions"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEvent" />
+
+    <TextView
+        android:id="@+id/edtActions"
+        android:layout_width="415dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="8dp"
+        android:background="#BCBABA"
+        android:text="\t\t\t\t\t\t\t\tNo Actions.Tap below to add one"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/edtAdded"
+        android:layout_width="259dp"
+        android:layout_height="45dp"
+        android:text="\t\t\t\t\t\t\t\t\t\t\t\tAdd Action"
+        android:textSize="12pt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtActions" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:gravity="center_vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/edtAdded"
+        app:layout_constraintStart_toEndOf="@+id/edtAdded"
+        app:srcCompat="@drawable/add" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="166dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:text="But Only if"
+        android:textSize="10pt"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.149"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtAdded" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="429dp"
+        android:layout_height="108dp"
+        android:background="#BCBABA"
+        android:text="Add an event before adding conditions"
+        android:textSize="9pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Display">
+
+
+    <ImageView
+        android:id="@+id/edThings"
+        android:layout_width="85dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_things"
+        android:gravity="center_vertical"/>
+
+    <TextView
+        android:id="@+id/things"
+        android:layout_width="112dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="8dp"
+        android:text="No Things!"
+        android:textSize="10pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edThings" />
+
+    <TextView
+        android:id="@+id/noDiscovery"
+        android:layout_width="376dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="12dp"
+        android:text="It looks like we didn't discover any device."
+        android:textSize="8.4pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/things" />
+
+    <TextView
+        android:id="@+id/edtOption"
+        android:layout_width="204dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Try an option below"
+        android:textSize="8pt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/noDiscovery" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="404dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="#ACACA4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtOption" />
+
+
+    <TextView
+        android:id="@+id/edtContact"
+        android:layout_width="257dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="60dp"
+        android:drawableLeft="@drawable/ic_baseline_contact"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:text="Contact Support"
+        android:textColor="@color/purple_700"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="415dp"
+        android:layout_height="67dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="4dp"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/purple_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/edtView"
+        android:layout_width="368dp"
+        android:layout_height="82dp"
+        android:drawableLeft="@drawable/ic_baseline_view_indicator_24"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:text="View our supported devices"
+        android:textColor="@color/purple_700"
+        android:textSize="8.5pt"
+        app:layout_constraintBottom_toTopOf="@+id/edtContact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="301dp"
+        android:layout_height="65dp"
+        android:drawableLeft="@drawable/ic_baseline_plus"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:text="Add a cloud Account"
+        android:textColor="@color/purple_700"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/edtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.354"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintVertical_bias="0.797" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="251dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="120dp"
+        android:drawableLeft="@drawable/ic_baseline_discover"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:padding="12dp"
+        android:text="Run Discovery"
+        android:textColor="@color/purple_700"
+        android:textSize="10pt"
+        app:layout_constraintBottom_toTopOf="@+id/edtView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtOption"
+        app:layout_constraintVertical_bias="0.09" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

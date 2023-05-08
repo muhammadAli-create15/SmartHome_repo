@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings">
+    <!-- activity_main.xml -->
+    <LinearLayout
+        android:layout_width="467dp"
+        android:layout_height="804dp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <!-- Section 1 -->
+
+        <TextView
+            android:id="@+id/edtUser_setting"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="#BCBABA"
+            android:padding="10dp"
+            android:text="User Settings"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/Section"
+            android:layout_width="430dp"
+            android:layout_height="87dp"
+            android:drawableLeft="@drawable/ic_baseline_account_24"
+            android:drawablePadding="16sp"
+            android:padding="10dp"
+            android:text="Moses.\n kmntanda@gmail.com "
+            android:textSize="12pt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <!-- Section 2 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/edtHome"
+            android:layout_width="430dp"
+            android:layout_height="70dp"
+            android:background="#BCBABA"
+            android:padding="10dp"
+            android:text="Home Settings"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/edtHub"
+            android:layout_width="430dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="16sp"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="Accounts and Hubs "
+            android:textSize="12pt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/material_dynamic_neutral_variant60" />
+
+
+        <TextView
+            android:id="@+id/edtClient"
+            android:layout_width="443dp"
+            android:layout_height="78dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_people_24"
+            android:drawablePadding="16sp"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="Clients"
+            android:textSize="12pt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/material_on_primary_emphasis_medium" />
+
+
+        <TextView
+            android:id="@+id/edtLocation"
+            android:layout_width="430dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="16sp"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="Locations"
+            android:textSize="12pt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/edtSpeak"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="#BCBABA"
+            android:padding="10dp"
+            android:text="Voice"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/edtVoice"
+            android:layout_width="440dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_record_voice"
+            android:drawablePadding="16sp"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="Voice Assistants "
+            android:textSize="12pt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <!-- Add more sections as needed -->
+        <TextView
+            android:id="@+id/edtApp"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="#BCBABA"
+            android:padding="10dp"
+            android:text="App Permissions"
+            android:textSize="12pt"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/edtPermission"
+            android:layout_width="438dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_settings_24"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="Notifications and Permission"
+            android:textSize="12pt" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="415dp"
+            android:layout_height="58dp"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="?android:attr/windowBackground"
+            app:itemBackground="@color/purple_200"
+            app:labelVisibilityMode="labeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image1"
+            app:layout_constraintVertical_bias="1.0"
+            app:menu="@menu/nav_menu" />
+
+    </LinearLayout>
+
+</LinearLayout>

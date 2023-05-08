@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:id="@+id/myLinearLayout"
+    android:layout_height="wrap_content"
+    tools:context=".Event"
+    android:orientation="horizontal">
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:layout_weight="1"
+            android:padding="20sp"
+            android:text="The time is Time"
+            android:textSize="14pt" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="400dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="8dp"
+            android:background="#ACACA4"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
